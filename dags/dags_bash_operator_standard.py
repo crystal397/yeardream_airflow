@@ -1,7 +1,7 @@
 import datetime
 
 from airflow import DAG
-from airflow.operators.empty import EmptyOperator
+from airflow.operators.bash import BashOperator
 
 my_dag = DAG(
     dag_id="dags_bash_operator_standard",
