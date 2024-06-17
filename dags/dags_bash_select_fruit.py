@@ -10,7 +10,7 @@ with DAG(
 ) as dag:
     t0_grant_permission = BashOperator(
         task_id="t0_grant_permission",
-        bash_command="chmod +x /opt/airflow/plugins/shell/select_fruit.sh ",
+        bash_command="chmod +x /opt/airflow/plugins/shell/select_fruit.sh",
     )
     t1_orange = BashOperator(
         task_id="t1_orange",
