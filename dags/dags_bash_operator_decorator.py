@@ -1,6 +1,6 @@
 import datetime
 
-from airflow import DAG
+from airflow.decorators import dag
 from airflow.operators.empty import EmptyOperator
 
 @dag(start_date=datetime.datetime(2024, 5, 1), 
