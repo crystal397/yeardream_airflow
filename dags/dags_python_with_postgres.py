@@ -28,4 +28,4 @@ with DAG(
         op_args=['172.28.0.3', '5432', 'crystal', 'crystal', 'crystal']
     )
         
-    insrt_postgres:
+    insrt_postgres
