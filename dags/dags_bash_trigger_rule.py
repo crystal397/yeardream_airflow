@@ -27,7 +27,7 @@ with DAG(
     t4 = BashOperator(
         task_id="t4",
         bash_command="echo \"last task\"",
-        triger_rule='one_success',
+        trigger_rule='one_success',
         dag=dag
     )
     [t1,t2,t3] >> t4
