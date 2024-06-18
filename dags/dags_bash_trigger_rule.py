@@ -19,18 +19,15 @@ with DAG(
         bash_command="exit 1",
         dag=dag
     )
-
     t3 = BashOperator(
         task_id="t3",
         bash_command="exit 1",
         dag=dag
     )
-
     t4 = BashOperator(
         task_id="t4",
         bash_command="echo \"last task\"",
         triger_rule='one_success',
         dag=dag
     )
-
     [t1,t2,t3] >> t4
