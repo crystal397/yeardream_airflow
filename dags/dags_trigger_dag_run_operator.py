@@ -19,8 +19,8 @@ with DAG(
     trigger_dag_task = TriggerDagRunOperator(
         task_id='trigger_dag_task',
         trigger_dag_id='dags_python_operator',
-        trigger_run_id=None,
-        logical_date=None'''data_interval_start''',
+        trigger_run_id="crystal",
+        logical_date=None,
         reset_dag_run=True,
         wait_for_completion=False,
         poke_interval=60,
